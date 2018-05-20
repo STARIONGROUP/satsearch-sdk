@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471</TargetFrameworks>
+    <Company>RHEA System S.A.</Company>
+    <Description>satsearch-sdk unit tests</Description>
+    <Copyright>Copyright © RHEA System S.A.</Copyright>
+    <RepositoryUrl>https://github.com/samatrhea/satsearch-sdk.git</RepositoryUrl>
+    <Configurations>Debug;Release;Dev</Configurations>
+    <AssemblyName>satsearch.sdk.tests</AssemblyName>
+    <RootNamespace>satsearch.sdk.tests</RootNamespace>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(Configuration)'=='Debug' or '$(Configuration)'=='Release'">
+      <ItemGroup>
+        <PackageReference Include="satsearch-SDK" Version="0.1.0" />
+      </ItemGroup>
+    </When>
+
+    <When Condition="'$(Configuration)'=='Dev'">
+      <ItemGroup>
+    <ProjectReference Include="..\satsearch-sdk\satsearch-sdk.csproj" />
+  </ItemGroup>
+    </When>
+  </Choose>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="4.5.4" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="4.5.4" />
+
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.2" />
+    <PackageReference Include="Moq" Version="4.8.2" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit.Console" Version="3.8.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  
+
+</Project>

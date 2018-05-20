@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471</TargetFrameworks>
+    <Company>RHEA System S.A.</Company>
+    <Version>0.1.0</Version>
+    <AssemblyName>satsearch.sdk</AssemblyName>
+    <Title>satsearch SDK</Title>
+    <Description>C# SDK used to communicate with the satsearch API available at https://api.satsearch.co</Description>
+    <Authors>Sam</Authors>
+    <PackageId>satsearch-SDK</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/RHEAGROUP/satsearch-sdk.git</RepositoryUrl>
+    <PackageTags>CDP CDP4 satsearch</PackageTags>
+    <PackageLicenseUrl>https://github.com/RHEAGROUP/satsearch-sdk/blob/master/LICENSE</PackageLicenseUrl>
+    <Configurations>Debug;Release;Dev;Dev</Configurations>
+    <PackageReleaseNotes>Inital release of the satsearch SDK</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NLog" Version="4.5.4" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45' Or '$(TargetFramework)' == 'net451' Or '$(TargetFramework)' == 'net452' Or '$(TargetFramework)' == 'net46' Or '$(TargetFramework)' == 'net461' Or '$(TargetFramework)' == 'net462' Or '$(TargetFramework)' == 'net47' Or '$(TargetFramework)' == 'net471'">
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+
+</Project>

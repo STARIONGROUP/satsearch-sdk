@@ -1,6 +1,6 @@
 # satsearch-sdk
 
-A C# library for connecting to the satsearch API available at https:\\api.satsearch.co
+A C# library for connecting to the satsearch API available at https://api.satsearch.co
 
 ## Installation
 
