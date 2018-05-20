@@ -75,7 +75,7 @@ foreach (var product in productResult.Data)
 
 # License
 
-The libraries contained in the satsearch-SDK are provided to the community under the GNU General Public License. If this license does not suit yuor needs, feel free to contact us at info@rheagroup.com. We may even grant you a copy of the software with a more liberal license for free.
+The libraries contained in the satsearch-SDK are provided to the community under the GNU General Public License. If this license does not suit your needs, feel free to contact us at info@rheagroup.com. We may even grant you a copy of the software with a more liberal license for free.
 
 # Contributions
 
