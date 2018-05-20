@@ -3,7 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net45;net451;net452;net46;net461;net462;net47;net471</TargetFrameworks>
     <Company>RHEA System S.A.</Company>
-    <Version>0.3.0</Version>
+    <Copyright>RHEA System S.A. 2018</Copyright>
+    <Version>1.0.0</Version>
     <AssemblyName>satsearch.sdk</AssemblyName>
     <Title>satsearch SDK</Title>
     <Description>C# SDK used to communicate with the satsearch API available at https://api.satsearch.co</Description>
@@ -14,8 +15,8 @@
     <PackageTags>CDP CDP4 satsearch</PackageTags>
     <PackageLicenseUrl>https://github.com/RHEAGROUP/satsearch-sdk/blob/master/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/RHEAGROUP/satsearch-sdk/master/satsearchlogosmall.png</PackageIconUrl>
-    <Configurations>Debug;Release;Dev;Dev</Configurations>
-    <PackageReleaseNotes>Inital release of the satsearch SDK</PackageReleaseNotes>
+    <Configurations>Debug;Release;Dev</Configurations>
+    <PackageReleaseNotes>release of version 1</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

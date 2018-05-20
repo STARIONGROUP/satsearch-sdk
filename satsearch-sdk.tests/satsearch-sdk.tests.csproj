@@ -14,7 +14,7 @@
   <Choose>
     <When Condition="'$(Configuration)'=='Debug' or '$(Configuration)'=='Release'">
       <ItemGroup>
-        <PackageReference Include="satsearch-SDK" Version="0.3.0" />
+        <PackageReference Include="satsearch-SDK" Version="1.0.0" />
       </ItemGroup>
     </When>
 
