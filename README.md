@@ -1,5 +1,7 @@
 # satsearch-sdk
 
+<img src="https://raw.githubusercontent.com/RHEAGROUP/satsearch-sdk/master/satsearchlogo.png">
+
 A C# library for connecting to the satsearch API available at https://api.satsearch.co. Satsearch provides a search engine for space products & services. This SDK provides a C# abstraction that makes it straightforward to integrate satsearch in your C# project.
 
 # satsearch and CDP4
@@ -10,7 +12,7 @@ RHEA Group’s [CDP4](https://github.com/RHEAGROUP/CDP4-IME-Community-Edition) p
 
 [satsearch’s](https://satsearch.co/) search engine offers users the ability to search through an extensive database of space products and services. With over 5000 products and 700 suppliers available through its platform, satsearch is aiming to build the first global marketplace for space. By brokering supply chain knowledge, satsearch enables users to rapidly navigate the global space supply chain to identify the right products and services.
 
-The [CDP4]((https://github.com/RHEAGROUP/CDP4-IME-Community-Edition) satsearch plugin makes use of the **satsearch-sdk** to provide a means to easily make use of the satsearch service. Users can perform searches from within the application and by means of simple drag-n-drop create new elements with parameters in a design. Have a look at this [youtube](https://www.youtube.com/watch?v=4uVmWufaoGw) video to see the result.
+The [CDP4](https://github.com/RHEAGROUP/CDP4-IME-Community-Edition) satsearch plugin makes use of the **satsearch-sdk** to provide a means to easily make use of the satsearch service. Users can perform searches from within the application and by means of simple drag-n-drop create new elements with parameters in a design. Have a look at this [youtube](https://www.youtube.com/watch?v=4uVmWufaoGw) video to see the result.
 
 # How To
 
