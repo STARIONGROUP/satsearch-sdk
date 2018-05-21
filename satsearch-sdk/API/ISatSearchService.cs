@@ -80,7 +80,7 @@ namespace satsearch.sdk.API
         Task<IEnumerable<Supplier>> Suppliers(Credentials credentials, CancellationToken cancellationToken);
 
         /// <summary>
-        /// Gets the categoies from the SatSearch service.
+        /// Gets the categories from the SatSearch service.
         /// </summary>
         /// <param name="credentials">
         /// The <see cref="Credentials"/> used to access the satsearch service
@@ -91,7 +91,7 @@ namespace satsearch.sdk.API
         Task<IEnumerable<Category>> Categories(Credentials credentials, CancellationToken cancellationToken);
 
         /// <summary>
-        /// Gets the attributes from the SatSearch service;
+        /// Gets the attribute types from the SatSearch service;
         /// </summary>
         /// <param name="credentials">
         /// The <see cref="Credentials"/> used to access the satsearch service

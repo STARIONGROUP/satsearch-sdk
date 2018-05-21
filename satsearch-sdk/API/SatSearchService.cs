@@ -219,7 +219,7 @@ namespace satsearch.sdk.API
         }
 
         /// <summary>
-        /// Gets the categoies from the SatSearch service.
+        /// Gets the categories from the SatSearch service.
         /// </summary>
         /// <param name="credentials">
         /// The <see cref="Credentials"/> used to access the satsearch service
@@ -267,7 +267,7 @@ namespace satsearch.sdk.API
         }
 
         /// <summary>
-        /// Gets the attributes from the SatSearch service;
+        /// Gets the attribute types from the SatSearch service;
         /// </summary>
         /// <param name="credentials">
         /// The <see cref="Credentials"/> used to access the satsearch service
