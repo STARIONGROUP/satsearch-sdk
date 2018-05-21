@@ -41,37 +41,7 @@ Two tokens are required to access the API:
   - Application Token: A token that can be requested from satsearch to integrate an application with satsearch. This is sent to the service using the **X-APP-ID** HTTP header.
   - API Token: A token that is requested by each end-user that wants to make use of satsearch. An API token can be requested by a user after [registering](https://satsearch.co/register) with satsearch.
 
-The following code snippet provides a sample of how the satsearch-SDK can be used:
-
-```
-// use the Credentials to access the online API
-var credentials = new Credentials("your-api-token", "your-application-token", "https://api.satsearch.co");
-
-// The HttpClientService and SatSearchSerializer are created manually but can also be injected using MEF
-var httpClientService = new HttpClientService();
-var satSearchSerializer = new SatSearchSerializer();
-
-var satSearchService = new SatSearchService(httpClientService, satSearchSerializer);
-
-// query the API for all existing suppliers AND get the first supplier to use in a later Product search:
-var supplierResult = await satSearchService.SupplierResult(this.credentials, new CancellationToken());
-var supplier = supplierResult.Data.First();
-
-// query the API for all existing categories AND get the first supplier to use in a later Product search:
-var categories = await satSearchService.Categories(this.credentials, new CancellationToken());
-var category = categories.First(); 
-
-var searchParameter = new SearchParameter();
-searchParameter.Categories = new List<Category> { category.Children }; // The API support category filtering on sub categories, not on so-called top-categories
-searchParameter.Suppliers = new List<Supplier> { supplier };
-
-var productResult = await satSearchService.Search(this.credentials, new CancellationToken(), searchParameter);
-
-foreach (var product in productResult.Data)
-{
-    Console.WriteLine(product.Name);
-}
-```
+The [SatSearchService](https://github.com/RHEAGROUP/satsearch-sdk/blob/master/satsearch-sdk/API/SatSearchService.cs) class is the meat-and-potatoes of the satsearch-SDK. Goto the [wiki](https://github.com/RHEAGROUP/satsearch-sdk/wiki/SatSearchService) for an example on how to use the satsearch-SDK to search for products of specific a supplier and categories.
 
 # License
 
