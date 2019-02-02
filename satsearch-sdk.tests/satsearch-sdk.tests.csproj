@@ -14,7 +14,7 @@
   <Choose>
     <When Condition="'$(Configuration)'=='Debug' or '$(Configuration)'=='Release'">
       <ItemGroup>
-        <PackageReference Include="satsearch-SDK" Version="1.0.0" />
+        <PackageReference Include="satsearch-SDK" Version="1.0.1" />
       </ItemGroup>
     </When>
 
@@ -27,15 +27,8 @@
 
   <ItemGroup>
     <Reference Include="System.Net.Http" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="NLog" Version="4.5.4" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Include="System.Net.Http" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="NLog" Version="4.5.11" />
-
   </ItemGroup>
   
   <ItemGroup>
@@ -49,7 +42,5 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-
-  
 
 </Project>
